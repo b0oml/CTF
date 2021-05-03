@@ -3,7 +3,7 @@
 > **Category:** Misc  
 > **Points:** From 200 to 148 (dynamic scoring)
 
-Connection to the challenge with netcat, we are given the following statement.
+By connecting to the challenge with netcat, we are given the following statement.
 
 ```
 $ nc challenges1.france-cybersecurity-challenge.fr 7002
@@ -58,7 +58,7 @@ img = Image.open(BytesIO(base64.b64decode(raw_b64)))
 
 Transform the image to a bidimensional array. We need to know, for each case, if there is a wall or not on each side and if the case is adjacent or not to a start or finish red arrow.
 
-The following code goes through each case and detect adjacents walls by looking if there is blue pixels. It does the same thing to detect if the case is adjacent to a red arrow (start and finish arrows).
+The following code go through each case and detect adjacent walls by looking if there is blue pixels. It does the same thing to detect if the case is adjacent to a red arrow (start and finish arrows).
 
 ```python
 class Case:
@@ -103,7 +103,7 @@ for y in range(2, max_y):
 
 Once we have our array, we can transform it to a graph.
 
-To do that, we goes through each case of our array and try to slide from top to bottom, right to left, bottom to top and left to right. If it is possible to slide, we add an edge to the graph.
+To do that, we go through each case of our array and try to slide from top to bottom, right to left, bottom to top and left to right. If it is possible to slide, we add an edge to the graph.
 
 ```python
 graph = networkx.DiGraph()
