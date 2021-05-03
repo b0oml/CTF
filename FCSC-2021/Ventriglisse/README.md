@@ -37,7 +37,7 @@ Press a key when you are ready...
 
 1. Get the successive maze images with pwntools.
 2. Represent each maze as a graph.
-3. Find the shortest path from in the graph.
+3. Find the shortest path in the graph.
 4. Transform the shortest path to cardinal directions and send the result back.
 
 ## Get the image with pwntools
